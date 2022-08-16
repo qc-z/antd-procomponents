@@ -1,0 +1,31 @@
+{
+  "name": "antd-procomponents",
+  "version": "0.0.1",
+  "description": "二次封装procomponents",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "scripts": {
+    "docs:dev": "dumi dev",
+    "docs:build": "dumi build",
+    "dev": "father dev",
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "authors": [],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "compiled"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@umijs/plugin-esbuild": "^1.4.1",
+    "dumi": "^1.1.47",
+    "father": "^4.0.0-rc.9",
+    "file-loader": "^6.2.0"
+  }
+}
